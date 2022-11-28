@@ -1,0 +1,9 @@
+baseURL = 'https://alias-asso.fr/'
+languageCode = 'fr-fr'
+title = 'Alias'
+theme = 'alias'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
