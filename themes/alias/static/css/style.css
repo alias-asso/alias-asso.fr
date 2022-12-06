@@ -55,6 +55,12 @@ main {
   gap: 20px;
 }
 
+@media (max-width: 480px) {
+  .list {
+    width: 90%;
+  }
+}
+
 .list-element {
   margin: auto;
   width: 100%;
@@ -75,8 +81,9 @@ main {
   gap: 20px;
 }
 
+
 .infos {
-  min-height: 130px;
+  height: auto;
   width: 100%;
   padding: 20px;
   margin: unset;
@@ -84,6 +91,19 @@ main {
   flex-direction: column;
   justify-content: start;
 }
+
+@media (max-width: 480px) {
+  .infos-container {
+    flex-direction: column;
+  }
+
+  .infos {
+    width: 90%;
+    justify-content: center;
+    justify-items: center;
+  }
+}
+
 
 .infos p,
 .infos h3,
