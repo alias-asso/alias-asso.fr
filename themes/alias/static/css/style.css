@@ -3,6 +3,18 @@
   src: url("../fonts/Roboto-Regular.ttf") format("ttf");
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Italic.ttf") format("ttf");
+  font-style: "italic";
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.ttf") format("ttf");
+  font-style: "bold";
+}
+
 body {
   color: #c0caf5;
   background: rgb(59, 57, 93);
