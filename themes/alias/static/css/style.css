@@ -55,7 +55,7 @@ main {
   gap: 20px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 730px) {
   .list {
     width: 90%;
   }
@@ -92,10 +92,15 @@ main {
   justify-content: start;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 730px) {
   .infos-container {
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
   }
+  
 
   .infos {
     width: 90%;
