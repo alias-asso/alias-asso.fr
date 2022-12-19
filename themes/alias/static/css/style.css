@@ -129,8 +129,22 @@ main {
   color: #c0caf5;
   text-decoration: initial;
   transition: all 0.05s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  place-items: center;
+  gap: 10px;
 }
 
 .link:hover {
   background-color: #272761;
 }
+
+.icon {
+    width: 2.5rem;
+    height: 2.5rem;
+
+    /* generate a filter for a specific color https://codepen.io/sosuke/pen/Pjoqqp */
+    filter: invert(90%) sepia(34%) saturate(2572%) hue-rotate(182deg) brightness(99%) contrast(94%);
+}
+

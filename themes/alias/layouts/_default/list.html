@@ -16,19 +16,24 @@
     <div class="infos-container">
       <a class="list-element infos">
         {{ with .GetPage "infos.md" }}
-          <h3>{{ .Title | upper }}</h3>
-          {{ .Content }} 
-        {{ end }}
+        <h3>{{ .Title | upper }}</h3>
+        {{ .Content }} {{ end }}
       </a>
       <a class="list-element infos">
         {{ with .GetPage "local.md" }}
-          <h3>{{ .Title | upper }}</h3>
-          {{ .Content }} 
-        {{ end }}
+        <h3>{{ .Title | upper }}</h3>
+        {{ .Content }} {{ end }}
       </a>
     </div>
     {{ range (where .Site.RegularPages "Section" "links") }}
-      <a href="{{ .Params.link }}" class="list-element link"> {{ .Title }} </a>
+        
+            <a href="{{ .Params.link }}" class="list-element link"> 
+                
+                <img src="{{.Params.icon }}" fill="white"  class="icon"/>
+                
+                {{ .Title }} 
+            </a>
+        
     {{ end }}
   </div>
 </main>
