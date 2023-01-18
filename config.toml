@@ -1,6 +1,6 @@
 baseURL = 'https://alias-asso.fr/'
 languageCode = 'fr-fr'
-title = 'Alias'
+title = 'ALIAS'
 theme = 'alias'
 
 [markup]
