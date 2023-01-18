@@ -26,14 +26,10 @@
       </a>
     </div>
     {{ range (where .Site.RegularPages "Section" "links") }}
-        
-            <a href="{{ .Params.link }}" class="list-element link"> 
-                
-                <img src="{{.Params.icon }}" fill="white"  class="icon"/>
-                
-                {{ .Title }} 
-            </a>
-        
+      <a href="{{ .Params.link }}" class="list-element link">
+        <img src="{{.Params.icon }}" fill="white" class="icon"/>
+        {{ .Title }}
+      </a>
     {{ end }}
   </div>
 </main>
