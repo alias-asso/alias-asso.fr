@@ -25,11 +25,15 @@
         {{ .Content }} {{ end }}
       </a>
     </div>
-    {{ range (where .Site.RegularPages "Section" "links") }}
-      <a href="{{ .Params.link }}" class="list-element link">
-        <img src="{{.Params.icon }}" fill="white" class="icon"/>
-        {{ .Title }}
-      </a>
+    {{ range sort (where .Site.RegularPages "Section" "links") ".Params.order" }}
+        
+            <a href="{{ .Params.link }}" class="list-element link"> 
+                
+                <img src="{{.Params.icon }}" fill="white"  class="icon"/>
+                
+                {{ .Title }} 
+            </a>
+        
     {{ end }}
   </div>
 </main>
