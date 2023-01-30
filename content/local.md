@@ -6,7 +6,9 @@ draft: false
 
 - Lieu : 14-15 506
 
-- Horaires : 12h45 - 13h45 et 18h00 - 19h00
+- Horaires : 
+  - 12h45 - 13h45
+  - 18h00 - 19h00
 
 - Status : **<span class="status"></span>**
 

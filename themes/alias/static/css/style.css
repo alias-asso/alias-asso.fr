@@ -89,7 +89,7 @@ main {
   height: auto;
   width: 100%;
   padding: 20px;
-  margin: unset;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -123,10 +123,6 @@ main {
   margin-bottom: 20px;
 }
 
-.infos ul {
-  width: 70%;
-}
-
 .link {
   font-size: 2.1em;
   color: #c0caf5;
@@ -151,6 +147,7 @@ main {
     filter: invert(90%) sepia(34%) saturate(2572%) hue-rotate(182deg) brightness(99%) contrast(94%);
 }
 
+/* Light Theme */
 @media (prefers-color-scheme: light) {
   body {
     background: rgb(249,249,255);
