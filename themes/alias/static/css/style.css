@@ -45,6 +45,9 @@ main {
   max-width: 250px;
   font-size: 3em;
   margin: auto;
+
+  /* generate a filter for a specific color https://codepen.io/sosuke/pen/Pjoqqp */
+  filter: brightness(0) saturate(100%) invert(82%) sepia(4%) saturate(2602%) hue-rotate(194deg) brightness(100%) contrast(93%);
 }
 
 .list {
@@ -148,3 +151,28 @@ main {
     filter: invert(90%) sepia(34%) saturate(2572%) hue-rotate(182deg) brightness(99%) contrast(94%);
 }
 
+@media (prefers-color-scheme: light) {
+  body {
+    background: rgb(249,249,255);
+    background: linear-gradient(163deg, rgba(249,249,255,1) 0%, rgba(206,206,254,1) 30%, rgba(166,163,255,1) 100%); 
+  }
+
+  .list-element {
+    background-color: #f9f9ff;
+    color: #5d5c8c;
+  }
+
+  .link:hover {
+    background-color: #d4d4ff;
+  }
+
+  /* generate a filter for a specific color https://codepen.io/sosuke/pen/Pjoqqp */
+  .icon {
+    filter: invert(41%) sepia(13%) saturate(1423%) hue-rotate(202deg) brightness(84%) contrast(86%);
+  }
+
+  /* generate a filter for a specific color https://codepen.io/sosuke/pen/Pjoqqp */
+  .logo {
+    filter: brightness(0) saturate(100%) invert(41%) sepia(13%) saturate(1423%) hue-rotate(202deg) brightness(84%) contrast(86%);
+  }
+}
