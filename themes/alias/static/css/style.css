@@ -60,14 +60,6 @@ main {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-.infos-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-
 .infos {
   height: auto;
   width: 100%;
@@ -76,6 +68,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: start;
+  box-sizing: border-box;
 }
 
 .infos p,
@@ -93,17 +86,8 @@ main {
 }
 
 @media (max-width: 730px) {
-  .infos-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-  }
-
-
   .infos {
-    width: 90%;
+    width: 100%;
     justify-content: center;
     justify-items: center;
   }
