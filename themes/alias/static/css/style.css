@@ -11,6 +11,7 @@ body {
 }
 
 main {
+  position: relative;
   min-height: 100vh;
   padding-top: 30px;
   box-sizing: border-box;
@@ -45,6 +46,7 @@ main {
   .list {
     width: 90%;
   }
+  
 }
 
 .list-element {
@@ -82,16 +84,10 @@ main {
 }
 
 .about ul {
-  width: 100%;
+  width: 90%;
 }
 
-@media (max-width: 730px) {
-  .infos {
-    width: 100%;
-    justify-content: center;
-    justify-items: center;
-  }
-}
+
 
 .link {
   font-size: 2.1em;
@@ -117,6 +113,29 @@ main {
     filter: invert(90%) sepia(34%) saturate(2572%) hue-rotate(182deg) brightness(99%) contrast(94%);
 }
 
+.galias {
+  position: absolute;
+  float:none;
+  width: 50px;
+  bottom: 5px;
+  right: 20px;
+  transition: all 10s;
+}
+
+.galias:hover {
+  transform: translateX(-1920px);
+}
+
+@media (max-width: 730px) {
+  .infos {
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+  }
+  .galias {
+    display: none;
+  }
+}
 /* Light Theme */
 @media (prefers-color-scheme: light) {
   body {
