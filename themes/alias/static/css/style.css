@@ -93,7 +93,7 @@ main {
   font-size: 2.1em;
   color: #c0caf5;
   text-decoration: initial;
-  transition: all 0.05s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.1s cubic-bezier(0.25, 0.8, 0.25, 1);
 
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
@@ -102,7 +102,7 @@ main {
 }
 
 .link:hover {
-  background-color: #272761;
+  transform: scale(1.05,1.05);
 }
 
 .icon {
