@@ -3,7 +3,5 @@ languageCode = 'fr-fr'
 title = 'ALIAS'
 theme = 'alias'
 
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+[markup.goldmark.renderer]
+unsafe = true
