@@ -20,3 +20,5 @@ Elle est aujourd'hui l'association officielle étudiante du cursus informatique,
 - apéros/goûters d'orientation
 - install party (aide à l'installation GNU/Linux)
 - ...parfois d'autres selon les années, on est toujours ouvert à des nouvelles idées :)
+
+

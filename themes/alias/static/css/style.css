@@ -46,7 +46,6 @@ main {
   .list {
     width: 90%;
   }
-  
 }
 
 .list-element {
@@ -107,11 +106,11 @@ main {
 }
 
 .icon {
-    width: 2.5rem;
-    height: 2.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
 
-    /* generate a filter for a specific color https://codepen.io/sosuke/pen/Pjoqqp */
-    filter: invert(90%) sepia(34%) saturate(2572%) hue-rotate(182deg) brightness(99%) contrast(94%);
+  /* generate a filter for a specific color https://codepen.io/sosuke/pen/Pjoqqp */
+  filter: invert(90%) sepia(34%) saturate(2572%) hue-rotate(182deg) brightness(99%) contrast(94%);
 }
 
 .galias {
@@ -125,6 +124,13 @@ main {
 
 .galias:hover {
   transform: translateX(-1920px);
+}
+
+.statuts-alias {
+  padding: 1.5rem 1rem 0.5rem 1rem;
+  align-self: start;
+  /* color: #5d5c8c; */
+  color: #c0caf5;
 }
 
 @media (max-width: 730px) {
@@ -144,7 +150,7 @@ main {
     background: linear-gradient(163deg, rgba(249,249,255,1) 0%, rgba(206,206,254,1) 30%, rgba(166,163,255,1) 100%); 
   }
 
-  .list-element {
+  .list-element, .statuts-alias {
     background-color: #f9f9ff;
     color: #5d5c8c;
   }
