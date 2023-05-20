@@ -1,6 +1,6 @@
 body {
   color: #c0caf5;
-  background: rgb(59, 57, 93);
+  /* background: rgb(59, 57, 93); */
   background: linear-gradient(
     163deg,
     rgba(10, 7, 61, 1) 0%,
@@ -127,10 +127,31 @@ main {
 }
 
 .statuts-alias {
-  padding: 1.5rem 1rem 0.5rem 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem ;
   align-self: start;
   /* color: #5d5c8c; */
-  color: #c0caf5;
+  color: #c0caf5; 
+  /* color: #ffffff; */
+  border-width: 1px;
+  /* background-color: red; */
+
+  /* background-color: black; */
+  text-decoration: none;
+}
+
+
+footer {
+  background: linear-gradient(
+  163deg,
+  rgba(10, 7, 61, 1) 0%,
+  rgba(14, 14, 46, 1) 30%,
+  rgba(1, 0, 28, 1) 100%
+  );
+
+  padding: 1.5rem;
+
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 730px) {
@@ -143,16 +164,22 @@ main {
     display: none;
   }
 }
+
 /* Light Theme */
 @media (prefers-color-scheme: light) {
   body {
     background: rgb(249,249,255);
-    background: linear-gradient(163deg, rgba(249,249,255,1) 0%, rgba(206,206,254,1) 30%, rgba(166,163,255,1) 100%); 
+    background: linear-gradient(163deg, rgba(249,249,255,1) 0%, rgba(206,206,254,1) 30%, rgba(166,163,255,1) 100%);
   }
 
-  .list-element, .statuts-alias {
+  .list-element {
     background-color: #f9f9ff;
     color: #5d5c8c;
+  }
+
+  .statuts-alias{
+    color: #5d5c8c;
+
   }
 
   .link:hover {
@@ -168,4 +195,16 @@ main {
   .logo {
     filter: brightness(0) saturate(100%) invert(41%) sepia(13%) saturate(1423%) hue-rotate(202deg) brightness(84%) contrast(86%);
   }
+
+  footer {
+    background: linear-gradient(163deg, rgba(249,249,255,1) 0%, rgba(206,206,254,1) 30%, rgba(166,163,255,1) 100%);
+
+  }
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }

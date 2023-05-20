@@ -9,30 +9,34 @@
 </script>
 {{ end }} {{ define "main" }}
 <main>
-  <div class="top">
+  <div>
+    <div class="top">
     <img src="alias_logo_white.svg" class="logo" />
-  </div>
-  <div class="list">
-    <a class="list-element infos">
-      {{ with .GetPage "local.md" }}
-      <h3>{{ .Title | upper }}</h3>
-      {{ .Content }} {{ end }}
-    </a>
-  {{ range sort (where .Site.RegularPages "Section" "links") ".Params.order" }}
-    <a href="{{ .Params.link }}" class="list-element link">
-      <img src="{{.Params.icon }}" fill="white"  class="icon"/>
-      {{ .Title }}
-    </a>
-  {{ end }}
-    <div class="list-element infos about">
-      {{ with .GetPage "infos.md" }}
-      <h3>{{ .Title | upper }}</h3>
-      {{ .Content }} {{ end }}
-      <a class="statuts-alias" href="/files/Statuts-ALIAS.pdf">Statuts juridiques</a>
+    </div>
+    <div class="list">
+      <a class="list-element infos">
+        {{ with .GetPage "local.md" }}
+        <h3>{{ .Title | upper }}</h3>
+        {{ .Content }} {{ end }}
+      </a>
+    {{ range sort (where .Site.RegularPages "Section" "links") ".Params.order" }}
+      <a href="{{ .Params.link }}" class="list-element link"> 
+        <img src="{{.Params.icon }}" fill="white"  class="icon"/>
+        {{ .Title }} 
+      </a>
+    {{ end }}
+      <div class="list-element infos about">
+        {{ with .GetPage "infos.md" }}
+        <h3>{{ .Title | upper }}</h3>
+        {{ .Content }} {{ end }}
+      </div>
+      <a href="https://alias-asso.fr/GALIAS" target="_blank">
+        <img class="galias" src="galias.png" alt="galias" />
+      </a>
     </div>
   </div>
-  <a href="https://alias-asso.fr/GALIAS" target="_blank">
-    <img class="galias" src="galias.png" alt="galias" />
-  </a>
+  <footer>
+    <a class="statuts-alias" href="/files/Statuts-ALIAS.pdf">Statuts juridiques</a>
+  </footer>
 </main>
 {{ end }}
