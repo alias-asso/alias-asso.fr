@@ -103,6 +103,7 @@ main {
 
 .link:hover {
   transform: scale(1.05,1.05);
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 .icon {
@@ -179,11 +180,6 @@ footer {
 
   .statuts-alias{
     color: #5d5c8c;
-
-  }
-
-  .link:hover {
-    background-color: #d4d4ff;
   }
 
   /* generate a filter for a specific color https://codepen.io/sosuke/pen/Pjoqqp */
