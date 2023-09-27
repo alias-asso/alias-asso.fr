@@ -1,0 +1,18 @@
+image: alpine/edge
+packages:
+  - hugo
+  - rsync
+secrets:
+  - 377b1655-4b5b-43a9-8cee-e48808fd7e55
+environment:
+  deploy: build@alias-asso.fr
+tasks:
+  - build: |
+      cd website
+      hugo
+  - deploy: |
+      cd website
+      sshopts="ssh -o StrictHostKeyChecking=no"
+      rsync --rsh="$sshopts" -avh --delete public/ $deploy:/var/www/alias-asso.fr/
+
+  
