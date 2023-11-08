@@ -8,11 +8,9 @@ environment:
   deploy: build@alias-asso.fr
 tasks:
   - build: |
-      cd website
+      cd alias-asso.fr
       hugo
   - deploy: |
-      cd website
+      cd alias-asso.fr
       sshopts="ssh -o StrictHostKeyChecking=no"
       rsync --rsh="$sshopts" -avh --delete public/ $deploy:/var/www/alias-asso.fr/
-
-  
