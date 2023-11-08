@@ -1,9 +1,9 @@
 ---
-title: "Inscription IO/SU"
-link: https://forms.gle/7DhATRtXpxdrdqoe7
+title: "IO/SU"
+link: https://iosu.alias-asso.fr/
 icon: icon-link.svg
 order: 5
 draft: false
 ---
-Inscription IO/SU
+IO/SU
 
