@@ -1,4 +1,4 @@
-name: Deploy mdBook site via ssh
+name: Deploy Hugo site via ssh
 
 on:
   push:
