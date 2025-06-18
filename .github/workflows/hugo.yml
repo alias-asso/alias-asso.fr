@@ -58,9 +58,10 @@ jobs:
             ${{ runner.temp }}/hugo_cache
           key: ${{ steps.cache-restore.outputs.cache-primary-key }}
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           path: ./public
+          name: website
 
   # Deployment job
   # https://zellwk.com/blog/github-actions-deploy/
@@ -70,8 +71,8 @@ jobs:
     steps:
       - name: Download artifact
         uses: actions/download-artifact@v4
-      - name: Unzip artifact
-        run: tar -xzf ./artifact.tar -C ./public
+        with:
+          name: website
       - name: Install SSH Key
         uses: shimataro/ssh-key-action@v2
         with:
@@ -80,6 +81,6 @@ jobs:
       - name: Adding Known Hosts
         run: ssh-keyscan -H ${{ secrets.DEPLOY_HOSTNAME }} >> ~/.ssh/known_hosts
       - name: Deploy with rsync
-        run: rsync --rsh="ssh -o StrictHostKeyChecking=no" -avh --delete ./public/ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOSTNAME }}:/var/www/alias-asso.fr/
+        run: rsync --rsh="ssh -o StrictHostKeyChecking=no" -avh --delete ./website/ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOSTNAME }}:/var/www/alias-asso.fr/
 
 
