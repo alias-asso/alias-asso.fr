@@ -73,6 +73,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: website
+          path: website/
       - name: Install SSH Key
         uses: shimataro/ssh-key-action@v2
         with:
