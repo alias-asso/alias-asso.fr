@@ -74,14 +74,12 @@ jobs:
         with:
           name: website
           path: website/
-      - name: Install SSH Key
+      - name: Setup SSH
         uses: shimataro/ssh-key-action@v2
         with:
           key: ${{ secrets.DEPLOY_SSH_KEY }}
-          known_hosts: 'just-a-placeholder-so-we-dont-get-errors'
-      - name: Adding Known Hosts
-        run: ssh-keyscan -H ${{ secrets.DEPLOY_HOSTNAME }} >> ~/.ssh/known_hosts
+          known_hosts: ${{ secrets.DEPLOY_SSH_KNOWN_HOSTS }}
       - name: Deploy with rsync
-        run: rsync --rsh="ssh -o StrictHostKeyChecking=no" -avh --delete ./website/ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOSTNAME }}:/var/www/alias-asso.fr/
+        run: rsync -avh --delete ./website/ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOSTNAME }}:/var/www/alias-asso.fr/
 
 
