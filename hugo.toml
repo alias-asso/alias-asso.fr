@@ -1,0 +1,13 @@
+baseURL = 'https://alias-asso.fr'
+languageCode = 'fr-fr'
+title = 'ALIAS'
+disableKinds = ["taxonomy", "term"]
+
+[params]
+description = 'Association Ludique et InformAtique de Sorbonne université'
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[build]
+writeStats = true

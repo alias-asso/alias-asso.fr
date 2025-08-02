@@ -1,0 +1,6 @@
+{{ define "main" }}
+<p>test</p>
+
+{{ partial "select.html" (dict "id" "os-select" "label" "Système d'exploitation"
+"options" (slice "Mac" "Windows" "Linux") "placeholder" "Choisissez..."
+"required" true "state" "default" ) }} {{ end }}

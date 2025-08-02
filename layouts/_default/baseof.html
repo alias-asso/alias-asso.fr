@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
+
+  {{ $styles := resources.Get "css/style.css" }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+
+  {{ $alpine := resources.Get "js/alpine.min.js" }}
+  <script defer src="{{ $alpine.RelPermalink }}"></script>
+
+  {{ $focus := resources.Get "js/alpine-focus.min.js" }}
+  <script defer src="{{ $focus.RelPermalink }}"></script>
+
+  {{ $collapse := resources.Get "js/alpine-collapse.min.js" }}
+  <script defer src="{{ $collapse.RelPermalink }}"></script>
+
+  {{ $mask := resources.Get "js/alpine-mask.min.js" }}
+  <script defer src="{{ $mask.RelPermalink }}"></script>
+</head>
+
+<body>
+  {{ block "main" . }}{{ end }}
+</body>
+
+</html>

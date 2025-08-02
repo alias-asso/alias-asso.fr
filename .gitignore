@@ -1,2 +1,13 @@
 public
 .hugo_build.lock
+.git
+*.db
+*.db.bak
+/.direnv
+/.cache
+/target
+/views/*_templ.go
+/views/*_templ.txt
+/static/css/styles.css
+/results
+/result

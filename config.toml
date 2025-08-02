@@ -1,7 +1,0 @@
-baseURL = 'https://alias-asso.fr/'
-languageCode = 'fr-fr'
-title = 'ALIAS'
-theme = 'alias'
-
-[markup.goldmark.renderer]
-unsafe = true
