@@ -10,4 +10,4 @@ description = 'Association Ludique et InformAtique de Sorbonne université'
 unsafe = true
 
 [build]
-writeStats = true
+writeStats = false

@@ -8,7 +8,7 @@ public
 /target
 /views/*_templ.go
 /views/*_templ.txt
-/static/css/styles.css
+/assets/css/style.css
 /results
 /result
 hugo_stats.json
