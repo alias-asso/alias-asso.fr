@@ -10,5 +10,3 @@ draft: false
   - 12h45 - 13h45
   - 18h00 - 19h00
 
-- Statut actuel: **<span class="status"></span>**
-
