@@ -1,6 +1,6 @@
 ---
 title: "À propos"
-date: 2022-11-23T17:35:20+01:00
+date: 2025-10-08T17:33:20+01:00
 draft: false
 ---
 
@@ -9,16 +9,15 @@ L'**A**ssociation **L**udique et **I**nform**A**tique de **S**orbonne universit�
 Elle est aujourd'hui l'association officielle étudiante du cursus informatique, gérée par et pour des étudiants.
 
 ## Nos buts
-- favoriser la communication entre l'administration et les étudiants
-- faciliter les contacts entre les élèves des différentes promotions
-- organiser des évènements améliorant la vie étudiante
+- Favoriser la communication entre l'administration et les étudiants
+- Faciliter les contacts entre les élèves des différentes promotions
+- Organiser des évènements améliorant la vie étudiante
 
 ## Nos actions
-- distribution des polycopiés (supports papier de cours/TD/TP) aux étudiants
-- organisation du hub Google HashCode
-- évènements de jeux (vidéos et de table)
-- apéros/goûters d'orientation
-- install party (aide à l'installation GNU/Linux)
+- Distribution des polycopiés (supports papier de cours/TD/TP) aux étudiants
+- Évènements de jeux (vidéos et de table)
+- Goûters d'orientation et de révisions
+- Install party (aide à l'installation GNU/Linux)
+- Fête de la Science
+- Don de PC et Coup de Pouce (prêt d'ordinateurs)
 - ...parfois d'autres selon les années, on est toujours ouvert à des nouvelles idées :)
-
-
