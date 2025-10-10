@@ -1,0 +1,17 @@
+{{ define "main" }}
+{{ partial "header.html" }}
+<article class="pb-8">
+  <div class="relative w-full h-[55svh]">
+    <img class="w-full h-full object-cover object-center" src="{{ .Params.src }}" />
+    <div class="absolute inset-0 bg-gradient-to-b from-surface-dark/50 to-transparent"></div>
+    <div class="absolute inset-0 bg-gray-800/30"></div>
+  </div>
+  <div class="flex flex-col gap-y-6 mt-16">
+    <h1 class="flex justify-center font-bold text-3xl">{{ .Title }}</h1>
+    <div class="max-w-md sm:max-w-3xl mx-8 sm:mx-12 md:mx-auto space-y-12 prose">
+      {{ .Content }}
+    </div>
+  </div>
+</article>
+{{ partial "footer.html" }}
+{{ end }}

@@ -2,6 +2,7 @@ baseURL = 'https://alias-asso.fr'
 languageCode = 'fr-fr'
 title = 'ALIAS'
 disableKinds = ["taxonomy", "term"]
+buildFuture = true
 
 [params]
 description = 'Association Ludique et InformAtique de Sorbonne université'

@@ -1,29 +1,24 @@
 <!doctype html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ .Site.Title }}{{ if .Title }} | {{ .Title }}{{ end }}</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
+    {{ $styles := resources.Get "css/style.css" }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
 
-  {{ $styles := resources.Get "css/style.css" }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+    {{ $alpine := resources.Get "js/alpine.min.js" }}
+    <script defer src="{{ $alpine.RelPermalink }}"></script>
 
-  {{ $alpine := resources.Get "js/alpine.min.js" }}
-  <script defer src="{{ $alpine.RelPermalink }}"></script>
+    <meta name="description" content="{{ .Site.Params.description }}" />
+    <meta name="author" content="{{ .Site.Title }}" />
 
-  {{ $focus := resources.Get "js/alpine-focus.min.js" }}
-  <script defer src="{{ $focus.RelPermalink }}"></script>
-
-  {{ $collapse := resources.Get "js/alpine-collapse.min.js" }}
-  <script defer src="{{ $collapse.RelPermalink }}"></script>
-
-  {{ $mask := resources.Get "js/alpine-mask.min.js" }}
-  <script defer src="{{ $mask.RelPermalink }}"></script>
-</head>
-
-<body>
-  {{ block "main" . }}{{ end }}
-</body>
-
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+  </head>
+  <!-- <body class="bg-gradient-to-br from-accent-200 to-accent-100"> -->
+  <body class="bg-accent-100">
+  <!-- <body class="bg-white"> -->
+    {{ block "main" . }}{{ end }}
+  </body>
 </html>
