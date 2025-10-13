@@ -7,6 +7,6 @@ draft: false
 - Lieu: 14-15 506, Sorbonne Université Campus Pierre et Marie Curie, 4 Place Jussieu, 75005 Paris
 
 - Horaires habituelles:
-  - 12h45 - 13h45
-  - 18h00 - 19h00
+  - Du lundi au vendredi : 12h45 - 13h45
+  - Mardi et Jeudi : 18h00 - 19h00
 
