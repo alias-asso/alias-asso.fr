@@ -5,4 +5,6 @@ src: "/welcome-day.jpg"
 date: 2025-09-12
 ---
 
-Chaque septembre, nous participons au Welcome Day organisé par la faculté pour acceuillir tous les nouveaux étudiants. C'est l'occasion parfaite pour découvrir l'ALIAS ! Vous nous trouverez sur notre où nous présentons l'association et ses activités. Que vous soyez en première année ou que vous arriviez en master, n'hésitez pas à passer nous voir pour poser vos questions et découvrir comment l'ALIAS peut enrichir votre parcours étudiant !
+Au début d'année, l'ALIAS participe au Welcome Day de la faculté des sciences.
+C'est l'occasion de découvrir l'ALIAS, ses membres et ses projets. Venez nous
+rencontrer, que vous soyez en master ou en licence et poser vos questions !

@@ -5,4 +5,9 @@ src: "/gouter-revision.jpg"
 date: 2025-11-05
 ---
 
-Les périodes de révisions peuvent être stressantes, c'est pourquoi nous organisons des goûters révision avant chaque session d'examens. Dans une salle réservée pour l'occasion, vous pouvez réviser dans un cadre studieux mais détendu. Nous fournissons de quoi manger pour tenir le coup et, quand c'est possible, un membre de l'ALIAS est présent pour vous aider sur les points difficiles. C'est l'occasion de réviser efficacement en groupe.
+Avant chaque périodes d'examens l'ALIAS organise des gouters de révisons. Mais
+qu'est ce que c'est ? Ce sont des séances de révisons en groupe permettant à
+tous les étudiant.e.s en informatique de Sorbonne Université, peu importe leur
+niveau, de se retrouver dans un environnement calme pour travailler leurs
+lacunes. Cela permet de transformer vos révisions en un moment convivial.
+L'ALIAS fournit le gouter.

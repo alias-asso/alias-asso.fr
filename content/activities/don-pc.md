@@ -5,4 +5,8 @@ src: "/don-pc.jpg"
 date: 2026-04-29
 ---
 
-Par d'ordinateur pour vos études ? Notre opération annuelle de don de PC est là pour vous aider ! Nous récupérons des ordinateurs, les remettons en étant avec soin, puis les distributions gratuitement aux étudiants qui en ont besoin. Nos membres bénévoles s'occupent de la remise en fonctionnement, de l'installation des logiciels essentiels et s'assurent que chaque machine soit prête à vous accompagner dans vos études.
+Notre opération de don de PC est une action annuelle qui a pour but de vous
+aider durant vos études en fournissant un ordinateur gratuitement aux
+étudiant.e.s qui en ont besoin. L'ALIAS s'occupe de récupérer les ordinateurs,
+de les remettre en état, d'installer les logiciels essentiels à leur bon
+fonctionnement et les plus adaptés à vos besoins et vous les remet.

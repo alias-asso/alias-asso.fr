@@ -14,7 +14,24 @@ Sur MacOS, il existe deux méthode d'installation. La première requiert de gér
 
 ## Méthode manuelle
 
+Avant de commencer, il faut s'assurer d'avoir bien installé `python3` et `tkinter`. 
+
+[Télécharger installateur](https://pkgs.alias-asso.fr/downloads/MrPython-5.1.6.dmg).
+
+Un fichier d'installation dmg est disponible et gère le reste de l'installation. Votre ordinateur marquera très probablement que le logiciel provient d'un developpeur non identifié. Pour corriger cette erreur, allez dans `Réglages Systèmes/Confidentialité et sécurité` puis en bas de page cliquez sur `Ouvrir quand même`.
+
+Vous pouvez ensuite utiliser MrPython comme toute autre application.
+
 ## Méthode brew
+
+Si vous avez déjà installé brew, alors l'installation est bien plus simple et s'occupe directement de la gestion des librairies.
+
+```sh
+curl -fsSL https://pkgs.alias-asso.fr/install.sh | sh
+brew install mrpython
+```
+
+Vous pouvez ensuite utiliser MrPython comme toute autre application.
 
 ## Windows
 

@@ -13,11 +13,11 @@ new PAGE:
 
 stage:
   just build
-  rsync -avz --delete public/ server:/data/www/alias-asso.preview.chambaz.xyz/
+  rsync -avz --delete public/ augustine:/var/www/preview.alias-asso.fr/
 
 publish:
   just build
-  rsync -avz --delete public/ augustine:/data/www/alias-asso.fr/
+  rsync -avz --delete public/ augustine:/var/www/alias-asso.fr/
 
 
 new-activity NAME:

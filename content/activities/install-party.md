@@ -5,4 +5,9 @@ src: "/install-party.jpg"
 date: 2025-10-04
 ---
 
-Vous devez installer Linux pour vos cours mais vous ne savez pas par où commencer ? Nos install parties sont faites pour vous ! Ces après-midis dédiés vous permettent d'installer une version stable de Fedora Linux sur votre ordinateur, avec la possibilité de conserver Windows avec un dual boot. Nos membres vous guident pas à pas dans le processus d'installation et répondent à toutes vos questions. Nous organisons 4 à 5 sessions par an pour que chacun puisse trouver un créneau qui lui convient. Venez avec votre ordinateur portable bien sauvegardé auparavant pour éviter les incidents et repartez avec un système Linux fonctionnel !
+Étudiant.e.s en informatique mais toujours sous Windows ? L'ALIAS vous aide à
+changer votre système d'exploitation vers Linux ! Lors de nos Install Parties,
+nous vous accompagnons pour installer Fedora sur votre ordinateur (ou un dual
+boot avec Windows et Fedora). Nos membres sont là pour répondre à vos questions
+et vous aider durant le processus. Il y a 4 à 5 Install Parties par an. Venez
+simplement avec votre ordinateur, votre chargeur et vos données sauvegardées !
