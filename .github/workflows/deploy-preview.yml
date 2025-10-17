@@ -44,4 +44,4 @@ jobs:
           known_hosts: ${{ secrets.DEPLOY_SSH_KNOWN_HOSTS }}
       - name: Deploy to server
         run: |
-          rsync -avz --delete result/ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOSTNAME }}:/var/www/preview.alias-asso.fr/
+          rsync -avz --delete --no-times result/ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOSTNAME }}:/var/www/preview.alias-asso.fr/
