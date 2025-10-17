@@ -3,15 +3,12 @@ on:
   push:
     branches: [dev]
   workflow_dispatch:
-
 permissions:
   contents: read
   actions: read
-
 concurrency:
   group: deploy-preview
   cancel-in-progress: true
-
 jobs:
   build:
     name: Build website
@@ -23,14 +20,13 @@ jobs:
         uses: cachix/install-nix-action@v22
         with:
           nix_path: nixpkgs=channel:nixos-unstable
-      - name: Build website
+      - name: Build package
         run: nix build
       - name: Upload build result
         uses: actions/upload-artifact@v4
         with:
-          name: website
+          name: result
           path: result/
-
   deploy:
     name: Deploy to preview server
     runs-on: ubuntu-latest
@@ -39,13 +35,13 @@ jobs:
       - name: Download build result
         uses: actions/download-artifact@v4
         with:
-          name: website
+          name: result
           path: result/
       - name: Install SSH key
         uses: shimataro/ssh-key-action@v2
         with:
           key: ${{ secrets.DEPLOY_SSH_KEY }}
           known_hosts: ${{ secrets.DEPLOY_SSH_KNOWN_HOSTS }}
-      - name: Deploy to preview
+      - name: Deploy to server
         run: |
-          rsync -avz --delete result/ ${{ secrets.DEPLOY_USER }}@augustine:/var/www/preview.alias-asso.fr/
+          rsync -avz --delete result/ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOSTNAME }}:/var/www/preview.alias-asso.fr/
