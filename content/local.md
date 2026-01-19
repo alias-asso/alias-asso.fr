@@ -8,5 +8,5 @@ draft: false
 
 - Horaires habituelles:
   - Du lundi au vendredi : 12h45 - 13h45
-  - Mardi et Jeudi : 18h00 - 19h00
+  - Lundi et Mardi : 18h00 - 19h00
 
